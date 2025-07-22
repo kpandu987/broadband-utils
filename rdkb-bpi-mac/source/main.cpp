@@ -38,7 +38,8 @@ int main() {
         {"lan3", 0x01, 0x03},
         {"wifi0", 0x02, 0x00},
         {"wifi1", 0x02, 0x01},
-        {"wifi2", 0x02, 0x02}
+        {"wifi2", 0x02, 0x02},
+        {"brlan0", 0x02, 0x00}
     };
     
     // Read serial number
