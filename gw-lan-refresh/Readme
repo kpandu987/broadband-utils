@@ -1,10 +1,10 @@
-Description:
+# Description
 This code implements an application to refresh the lan clients connected ports for updating the DHCP configuration.
 
-Core Functionality:
+# Core Functionality
 The program is to refresh all the eth ports except the port which is associated with WAN for BPI R4 device. As part of the refresh it will restart wifi clients using "X_CISCO_COM_KickAssocDevices" DM.
 
-Sample Output:
+# Sample Output
 root@Filogic-GW:/rdklogs/logs# gw_lan_refresh
 [  619.265690] brlan0: port 1(lan1) entered disabled state
 [  619.275415] mt7530 mdio-bus:1f lan2: Link is Down
