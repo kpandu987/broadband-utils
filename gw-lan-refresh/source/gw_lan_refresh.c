@@ -55,9 +55,9 @@ void refresh_external_switch()
     INT max_phy_eth_ports = 0;
 
     /* Total 3 LAN ports*/
-    max_phy_eth_ports = CCSP_HAL_ETHSW_EthPort3;
+    max_phy_eth_ports = CCSP_HAL_ETHSW_EthPort4;
 
-    for (port = CCSP_HAL_ETHSW_EthPort1; port <= max_phy_eth_ports; port++)
+    for (port = CCSP_HAL_ETHSW_EthPort2; port <= max_phy_eth_ports; port++)
     {
         // Disable the port
         DBG_PRINT("%s(): setting admin status down for port %d\n", __FUNCTION__, port);
@@ -66,7 +66,7 @@ void refresh_external_switch()
 
     sleep(SLEEP_TIME);
 
-    for (port = CCSP_HAL_ETHSW_EthPort1; port <= max_phy_eth_ports; port++)
+    for (port = CCSP_HAL_ETHSW_EthPort2; port <= max_phy_eth_ports; port++)
     {
         // Enable the port
         DBG_PRINT("%s(): setting admin status up for port %d\n", __FUNCTION__, port);
